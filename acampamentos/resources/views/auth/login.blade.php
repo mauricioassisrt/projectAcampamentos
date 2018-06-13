@@ -13,16 +13,16 @@
 
             <!-- Select2 -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css">
-    
+
     <!-- Theme style -->
     <link rel="stylesheet" href="../../vendor/adminlte/dist/css/AdminLTE.min.css">
 
             <!-- DataTables -->
         <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
-    
+
         <link rel="stylesheet" href="../../vendor/adminlte/plugins/iCheck/square/blue.css">
     <link rel="stylesheet" href="../../vendor/adminlte/css/auth.css">
-    
+
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -35,12 +35,13 @@
 <body class="hold-transition login-page">
 
     <div class="login-box">
-        <div class="login-logo">
-            <a href="../../home"><b>Admin</b>LTE</a>
-        </div>
+
         <!-- /.login-logo -->
         <div class="login-box-body">
-            <p class="login-box-msg">Sign in to start your session</p>
+          <div class="login-logo">
+              <a href="../../home"><b>CRISTÃO DIGITAL</b></a>
+          </div>
+            <p class="login-box-msg">Entre com seu usúario e senha </p>
             <form method="POST" action="{{ route('login') }}">
 
                   @csrf
@@ -50,20 +51,21 @@
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                                     </div>
                 <div class="form-group has-feedback ">
-                    <input type="password" name="password" class="form-control" placeholder="Password" >
+                    <input type="password" name="password" class="form-control" placeholder="Senha" >
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                                     </div>
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="checkbox icheck">
                             <label>
-                                <div class="icheckbox_square-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" name="remember" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Remember Me
+                                <div class="icheckbox_square-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" name="remember" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                </div> Salvar
                             </label>
                         </div>
                     </div>
                     <!-- /.col -->
                     <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                        <button type="submit" class="btn btn-success btn-block btn-flat">Acessar </button>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -100,7 +102,7 @@
             });
         });
     </script>
-    
+
 
 
 </body></html>
